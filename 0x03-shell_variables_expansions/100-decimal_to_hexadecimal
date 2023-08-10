@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%X\n" $DECIMAL
+echo "$DECIMAL" | while read num; do printf "%X\n" "$num"; done
