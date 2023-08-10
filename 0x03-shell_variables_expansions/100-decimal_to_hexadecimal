@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$DECIMAL" | while read num; do printf "%X\n" "$num"; done
+echo "obase=16; $DECIMAL" | dc
